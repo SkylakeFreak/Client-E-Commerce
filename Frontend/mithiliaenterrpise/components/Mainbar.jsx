@@ -32,7 +32,7 @@ function Mainbar() {
   
 
   return (
-    <div  className="  text-white font-sans relative"> 
+    <div  className="  text-white font-sans h-screen relative"> 
     
    {upperhide&&<div className="text-black bg-[#E2DFD0] animate-slideDown top-0 z-30 w-full fixed h-auto text-2xl">
       <div className="hidden lg:flex"><Fixedbar/></div>
@@ -85,7 +85,7 @@ function Mainbar() {
        
       </div>
       
-      <Image src={Img1} className='h-[650px] object-cover w-full absolute z-10 top-0' alt="" />
+      <Image src={Img1} className='h-screen object-cover w-full absolute z-10 top-0' alt="" />
     </div>
   );
 }
