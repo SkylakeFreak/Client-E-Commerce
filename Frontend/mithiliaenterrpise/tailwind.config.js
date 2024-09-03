@@ -18,6 +18,11 @@ module.exports = {
           '0%':{transform:'translateY(0%)'},
           '100%':{transform:'translateY(-100%)'},
         },
+        formGrow:{
+          '0%':{transform:'opacity(0%)'},
+          '100%':{transform:'opacity(100%)'},
+
+        },
 
       },
       animation:{
