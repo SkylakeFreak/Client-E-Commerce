@@ -18,16 +18,30 @@ module.exports = {
           '0%':{transform:'translateY(0%)'},
           '100%':{transform:'translateY(-100%)'},
         },
-        formGrow:{
-          '0%':{transform:'opacity(0%)'},
-          '100%':{transform:'opacity(100%)'},
-
-        },
+          formGrow: {
+            '0%': { opacity: 0 },
+            '100%': { opacity: 1 },
+          },
+          formColl: {
+            '0%': { opacity: 1 },
+            '100%': { opacity: 0 },
+          },
+          scroll: {
+            '0%': { transform: 'translateX(-100%)' },
+            '100%': { transform: 'translateX(100%)' },
+          },
+          loopscroll: {from:{transform:"translateX(0%)"},
+                        to:{transform:"translateX(-298%)"},},
 
       },
       animation:{
         slideDown:'slideDown 1s ease-out',
-        slideUp:'slideUp 1s ease-in'
+        slideUp:'slideUp 1s ease-in',
+        formGrow:'formGrow 1s ease-in',
+        formColl:'formColl 1s ease-in',
+        scroll: 'scroll 10s linear infinite',
+        loopscroll:'loopscroll 18s linear infinite'
+      
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

@@ -91,30 +91,18 @@ function Mainbar() {
           </div>
         )}
       </div>
-      <div className="text-black relative z-20 w-full font-sans justify-center flex flex-col items-center">
-        <div className="flex flex-row gap-x-10 ml-20 mr-20 mt-20">
-          <div className="flex flex-col w-full gap-y-2">
-            <p className="text-4xl">
-              <span className="text-5xl">W</span>e are Manufacturing products
-              with world class Quality
-            </p>
-            <p className="text-lg md:w-[700px] mt-2">
-              Our Offered Products are highly acclamined in the market for their
-              Precise Processing, fine finish and Tear Resistance
-            </p>
-          </div>
-          <div className="hidden lg:flex">
-            <Order />
-          </div>
+      <div className="text-black absolute top-0 z-20 w-full font-sans h-full flex flex-col items-center">
+      <div className=" flex items-center h-full w-full p-1 md:p-5 md:mt-5">
+        <div className="w-full flex items-center h-full justify-center"><Imagecontainer/></div>
+          
         </div>
-        <div className="h-full flex items-center justify-center w-full md:mt-5">
-          <Imagecontainer/>
-        </div>
+        
+        
       </div>
 
       <Image
         src={Img1}
-        className="h-screen object-cover w-full min-h-[900px] absolute z-10 top-0"
+        className="h-screen object-cover w-full  absolute z-10 top-0"
         alt=""
       />
     </div>
