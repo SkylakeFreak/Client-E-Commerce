@@ -1,8 +1,10 @@
 "use client";
 import React, { useState, useRef, useEffect } from "react";
 import Img1 from "../public/bg.jpg";
+import img2 from "..//public/gb2.jpg"
 import Image from "next/image";
 import Menubuttons from "./Menubuttons";
+import Aboutus from "./Aboutus";
 import Order from "./Order";
 import Fixedbar from "./Fixedbar";
 import Imagecontainer from "./Imagecontainer";
@@ -68,19 +70,19 @@ function Mainbar() {
         </div>
       )}
 
-      <div className="flex flex-row h-20 relative z-40   ">
+      <div className="flex flex-row h-20 bg-gray-800 relative z-40   ">
         {!open && (
-          <div className="h-20 ml-4 justify-center flex lg:hidden items-center">
+          <div className="h-20 ml-4 w-[110px] justify-center flex lg:hidden items-center">
             <img
               onClick={() => {
                 setopen(true);
                 setopen1(true);
               }}
               className="hover:rotate-90 transition-all duration-200 hover:cursor-pointer w-[45px] h-[40px]"
-              src="https://img.icons8.com/external-yogi-aprelliyanto-basic-outline-yogi-aprelliyanto/64/external-menu-multimedia-yogi-aprelliyanto-basic-outline-yogi-aprelliyanto-2.png"
+              src="https://img.icons8.com/ios-filled/50/FA5252/circled-menu.png"
               alt="external-menu-multimedia-yogi-aprelliyanto-basic-outline-yogi-aprelliyanto-2"
             />
-            <p className="text-black p-1">
+            <p className="text-white p-1">
               <span className="font-bold text-lg">M</span>enu
             </p>
           </div>
@@ -92,19 +94,13 @@ function Mainbar() {
         )}
       </div>
       <div className="text-black absolute top-0 z-20 w-full font-sans h-full flex flex-col items-center">
-      <div className=" flex items-center h-full w-full p-1 md:p-5 md:mt-5">
-        <div className="w-full flex items-center h-full justify-center"><Imagecontainer/></div>
-          
-        </div>
+        <Aboutus/>
+
+     
         
         
       </div>
 
-      <Image
-        src={Img1}
-        className="h-screen object-cover w-full  absolute z-10 top-0"
-        alt=""
-      />
     </div>
   );
 }
