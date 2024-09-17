@@ -6,7 +6,7 @@ function Aboutus() {
   return (
     <div className='bg-white w-full h-auto'>
         <div className='mt-20 h-full w-full'>
-            <Image className='w-full outline outline-2 outline-black' src={img2} alt=""></Image>
+            <Image className='w-full outline outline-2 outline-black' src={img2} alt="NO IMAGE"></Image>
             <div className='h-[800px] w-full p-2  md:p-20 flex flex-col'>
                 <div className='h-20 flex items-center'>
                     <p className='text-3xl md:text-4xl'>Welcome to Our Industry!</p>
